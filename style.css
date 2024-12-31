@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #444;
+  font-size: 1.5rem;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.linha-inputs {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px 5px;
+}
+
+.linha-inputs input[type="number"] {
+  padding: 10px;
+  width: 15%;
+  font-size: 16px;
+  text-align: center;
+}
+
+.numero {
+  border: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+  font-size: 16px;
+  width: 50px;
+  text-align: center;
+  background-color: #f4f4f9;
+}
+
+.numero:focus {
+  border: none;
+  border-bottom: 2px solid blue;
+  outline: none;
+  font-size: 16px;
+  width: 50px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #007BFF;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.cartela {
+  display: flex;
+  gap: 2px;
+  justify-items: center;
+  margin: 0 auto;
+  margin-left: 20px;
+}
+
+.numero-cartela {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.numero-cartela.acertado {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+  .linha-inputs input[type="number"] {
+    width: 20%;
+  }
+  table {
+    font-size: 0.8rem;
+  }
+  .cartela {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .numero-cartela {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .linha-inputs input[type="number"] {
+    width: 30%;
+    font-size: 14px;
+  }
+  .numero-cartela {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mega da Virada</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>MEGA DA VIRADA 2024</h1>
+    
+    <div id="linhas" class="linha-inputs">
+      <input type="number" class="numero" oninput="limitInput(this, 2)" aria-label="Número 1"/>
+      <input type="number" class="numero" oninput="limitInput(this, 2)" aria-label="Número 2"/>
+      <input type="number" class="numero" oninput="limitInput(this, 2)" aria-label="Número 3"/>
+      <input type="number" class="numero" oninput="limitInput(this, 2)" aria-label="Número 4"/>
+      <input type="number" class="numero" oninput="limitInput(this, 2)" aria-label="Número 5"/>
+      <input type="number" class="numero" oninput="limitInput(this, 2)" aria-label="Número 6"/>
+    </div>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Jogo</th>
+          <th>Cartela</th>
+          <th>Letra</th>
+        </tr>
+      </thead>
+      <tbody id="tabelaJogos">
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
